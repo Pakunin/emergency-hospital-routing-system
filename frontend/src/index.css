@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-darkBg: #111827;
+  --color-darkCard: #1f2937;
+  --color-accentRed: #ef4444;
+}
+
+body {
+  background-color: var(--color-darkBg);
+  color: #f9fafb; /* gray-50 */
+}
