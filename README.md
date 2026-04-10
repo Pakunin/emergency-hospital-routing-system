@@ -9,7 +9,7 @@ A full-stack application leveraging mathematical graph traversal (BFS / UCS) to 
 ## Supabase Setup (Prerequisite)
 
 1.  Create a free project on [Supabase](https://supabase.com).
-2.  Go to the **SQL Editor** in your Supabase dashboard and run the schema queries provided in the requirements document.
+2.  Go to the **SQL Editor** in your Supabase dashboard and run the schema queries provided in the schemas document.
 3.  Go to **Project Settings > API** to collect your keys:
     -   Project URL
     -   anon public key
@@ -21,7 +21,15 @@ Open a terminal and navigate to the backend directory:
 ```bash
 cd backend
 ```
-1.  **Create `.env` file** (It is created, you must populate it):
+1.  **Create `.env` file**:
+    For Windows:
+    ```bash
+    copy backend.env.example backend.env
+    ```
+    For Mac/Linux:
+    ```bash
+    cp backend/.env.example backend/.env
+    ```
     Replace placeholders in `backend/.env` with your actual Supabase URL and service_role key.
     ```env
     SUPABASE_URL=your_supabase_project_url
@@ -49,7 +57,15 @@ Open a new terminal and navigate to the frontend directory:
 ```bash
 cd frontend
 ```
-1.  **Create `.env` file** (It is created, you must populate it):
+1.   **Create `.env` file**:
+    For Windows:
+    ```bash
+    copy frontend.env.example frontend.env
+    ```
+    For Mac/Linux:
+    ```bash
+    cp frontend/.env.example frontend/.env
+    ```
     Replace placeholders in `frontend/.env` with your Supabase URL and anon public key.
     ```env
     VITE_SUPABASE_URL=your_supabase_project_url
