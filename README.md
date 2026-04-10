@@ -25,13 +25,13 @@ cd backend
 
     For Windows:
     ```bash
-    copy backend\.env.example backend.env
+    copy backend\.env.example backend\.env
     ```
     For Mac/Linux:
     ```bash
-    cp backend\.env.example backend/.env
+    cp backend\.env.example backend\.env
     ```
-    Replace placeholders in `backend/.env` with your actual Supabase URL and service_role key.
+    Replace placeholders in `backend\.env` with your actual Supabase URL and service_role key.
     ```env
     SUPABASE_URL=your_supabase_project_url
     SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_role_key
@@ -66,9 +66,9 @@ cd frontend
     ```
     For Mac/Linux:
     ```bash
-    cp frontend\.env.example frontend/.env
+    cp frontend\.env.example frontend\.env
     ```
-    Replace placeholders in `frontend/.env` with your Supabase URL and anon public key.
+    Replace placeholders in `frontend\.env` with your Supabase URL and anon public key.
     ```env
     VITE_SUPABASE_URL=your_supabase_project_url
     VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
