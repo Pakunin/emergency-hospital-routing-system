@@ -22,13 +22,14 @@ Open a terminal and navigate to the backend directory:
 cd backend
 ```
 1.  **Create `.env` file**:
+
     For Windows:
     ```bash
-    copy backend.env.example backend.env
+    copy backend\.env.example backend.env
     ```
     For Mac/Linux:
     ```bash
-    cp backend/.env.example backend/.env
+    cp backend\.env.example backend/.env
     ```
     Replace placeholders in `backend/.env` with your actual Supabase URL and service_role key.
     ```env
@@ -37,16 +38,16 @@ cd backend
     FLASK_ENV=development
     FLASK_PORT=5000
     ```
-2.  **Install dependencies:**
+3.  **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-3.  **Seed Database:**
+4.  **Seed Database:**
     Populate the Supabase database with dummy hospitals, junctions, and roads.
     ```bash
-    python seed/seed_data.py
+    python seed\seed_data.py
     ```
-4.  **Run API Server:**
+5.  **Run API Server:**
     ```bash
     python run.py
     ```
@@ -57,14 +58,15 @@ Open a new terminal and navigate to the frontend directory:
 ```bash
 cd frontend
 ```
-1.   **Create `.env` file**:
-    For Windows:
+1. **Create `.env` file**:
+
+   For Windows:
     ```bash
-    copy frontend.env.example frontend.env
+    copy frontend\.env.example frontend.env
     ```
     For Mac/Linux:
     ```bash
-    cp frontend/.env.example frontend/.env
+    cp frontend\.env.example frontend/.env
     ```
     Replace placeholders in `frontend/.env` with your Supabase URL and anon public key.
     ```env
@@ -72,11 +74,11 @@ cd frontend
     VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
     VITE_BACKEND_URL=http://localhost:5000
     ```
-2.  **Install dependencies:**
+3.  **Install dependencies:**
     ```bash
     npm install
     ```
-3.  **Run Development Server:**
+4.  **Run Development Server:**
     ```bash
     npm run dev
     ```
