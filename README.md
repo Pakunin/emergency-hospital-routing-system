@@ -6,7 +6,7 @@ A full-stack application leveraging mathematical graph traversal (BFS / UCS) to 
 -   **Backend:** Python, Flask, Flask-CORS
 -   **Database:** Supabase (PostgreSQL)
 
-## 🔑 Supabase Setup (Prerequisite)
+## Supabase Setup (Prerequisite)
 
 1.  Create a free project on [Supabase](https://supabase.com).
 2.  Go to the **SQL Editor** in your Supabase dashboard and run the schema queries provided in the requirements document.
@@ -15,7 +15,7 @@ A full-stack application leveraging mathematical graph traversal (BFS / UCS) to 
     -   anon public key
     -   service_role key
 
-## ⚙️ Backend Setup
+## Backend Setup
 
 Open a terminal and navigate to the backend directory:
 ```bash
@@ -43,7 +43,7 @@ cd backend
     python run.py
     ```
 
-## 💻 Frontend Setup
+## Frontend Setup
 
 Open a new terminal and navigate to the frontend directory:
 ```bash
