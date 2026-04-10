@@ -17,7 +17,7 @@ def run_ucs(graph, start_node_id, hospital_node_ids):
 
         for neighbor, cost, dist in graph.get(current, []):
             new_cost = total_cost + cost
-            if neighbor not in visited or new_cost < visited[neighbor]:
+            if new_cost < visited.get(neighbor, float('inf')):
                 heapq.heappush(pq, (new_cost, neighbor, path + [neighbor]))
 
     return None, [], 0.0
